@@ -2,7 +2,7 @@
 
 The aim of my code was to allow for a restaurant recommendations page. 
 
-After inputting your name and your area code, you are then redirected based on your location to northside or southside.
+After inputting your name and your area code, you are then redirected based on your location to northside or southside (is actually accurate based on Dublin areas).
 
 You can indicate a preference for a choice of cuisine, and your budget.
 
