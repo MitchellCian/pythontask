@@ -10,7 +10,7 @@ if areacode % 2 == control2:
 else:
   print(f"Based on your area code being Dublin {areacode}, you will now be redirected to restaurants on the Northside. ")
 
-# Area code given, now enter your cuisine preference  
+# Area code given, now enter your cuisine  
 print("You will now be given a choice of cuisine. Please choose from the following cuisines: ")
 print("Italian, Mexican, Chinese")
 
@@ -27,23 +27,42 @@ if preference == "Italian":
         
 
 # You have chosen your preferred cuisine, now for your budget
-italbudget = int(input("Please state an estimate of your budget - what is the max price you are willing to pay for your meal? "))
-if italbudget >= 25 and preference == "Italian":
+
+budget = int(input("Please state an estimate of your budget - what is the max price you are willing to pay for your meal? "))
+
+if budget >= 25 and preference == "Italian":
         print("Based on your budget of 25 euros or more pp, we recommend Marco Biancos")
-else:
+elif budget < 25 and preference == "Italian":
         print("For a budget under 25 euros, we recommend either: Happy Italy or Vapianos")
-    
-mexbudget = int(input("Please state an estimate of your budget - what is the max price you are willing to pay for your meal? "))
-if mexbudget > 25 and preference == "Mexican":
+
+if budget >= 25 and preference == "Mexican":
         print("Based on your budget of 25 euros or more pp, we recommend Tucos Tacqueria")
-else:
+elif budget < 25 and preference == "Mexican":
         print("For a budget under 25 euros, we recommend either: Boojum or Tolteca")
         
-chibudget = int(input("Please state an estimate of your budget - what is the max price you are willing to pay for your meal? "))
-if chibudget > 25 and preference == "Italian":
+if budget >= 25 and preference == "Chinese":
         print("Based on your budget of 25 euros or more pp, we recommend Tattu")
-else:
+elif budget < 25 and preference == "Chinese":
         print("For a budget under 25 euros, we recommend either: Golden Goose or Siver Duck")
+
+
+# italbudget = int(input("Please state an estimate of your budget - what is the max price you are willing to pay for your meal? "))
+# if italbudget >= 25 and preference == "Italian":
+#         print("Based on your budget of 25 euros or more pp, we recommend Marco Biancos")
+# else:
+#         print("For a budget under 25 euros, we recommend either: Happy Italy or Vapianos")
+    
+# mexbudget = int(input("Please state an estimate of your budget - what is the max price you are willing to pay for your meal? "))
+# if mexbudget > 25 and preference == "Mexican":
+#         print("Based on your budget of 25 euros or more pp, we recommend Tucos Tacqueria")
+# else:
+#         print("For a budget under 25 euros, we recommend either: Boojum or Tolteca")
+        
+# chibudget = int(input("Please state an estimate of your budget - what is the max price you are willing to pay for your meal? "))
+# if chibudget > 25 and preference == "Italian":
+#         print("Based on your budget of 25 euros or more pp, we recommend Tattu")
+# else:
+#         print("For a budget under 25 euros, we recommend either: Golden Goose or Siver Duck")
 
 # if preference == "Mexican" and budget > 50:
 #     print("Based on your budget of 50 euros or more pp, we recommend Tucos Tacqueria")
